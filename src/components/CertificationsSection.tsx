@@ -10,11 +10,11 @@ const CertificationsSection: React.FC = () => {
     {
       title: "CDAC Drones Technology",
       organization: "Centre for Development of Advanced Computing",
-      date: "August 2022",
+      date: "2024",
       description: "Comprehensive training in drone technology, covering hardware, software, regulations, and practical applications.",
       image: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?q=80&w=1480&auto=format&fit=crop",
       skills: ["Drone Programming", "Control Systems", "Image Processing", "Flight Planning"],
-      verificationLink: "https://cdac.in/certification/verify/123456"
+      verificationLink: "https://drive.google.com/file/d/1x36-szlrwIz3w9Ub7KeHa68STITuYAgU/view?usp=drive_link"
     },
     {
       title: "Machine Learning Internship",
