@@ -12,52 +12,30 @@ const ProjectsSection: React.FC = () => {
   // Project data
   const projects = [
     {
-      title: "Stock Price Prediction System",
-      description: "An ML-based system that predicts stock prices using historical data and market indicators with high accuracy.",
+      title: 'E-Commerce Platform Shopify',
+      description: 'A full-stack e-commerce application with features like product catalog, user authentication, cart management, and payment integration.',
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1470&auto=format&fit=crop",
       tags: ["Python", "TensorFlow", "Time Series", "Data Analysis"],
-      githubLink: "https://github.com/yashrajsah/stock-predictor",
-      demoLink: "https://stock-predictor-demo.com",
+      githubLink: 'https://github.com/Thenameisyashraj1707/shopify.git',
+      demoLink: 'https://yashrajweb-shopify.netlify.app/'
     },
     {
-      title: "Smart Drone Navigation",
-      description: "A computer vision system for autonomous drone navigation that identifies obstacles and maps optimal flight paths.",
-      image: "https://images.unsplash.com/photo-1507582020474-9a35b7d455d9?q=80&w=1470&auto=format&fit=crop",
-      tags: ["Computer Vision", "Python", "OpenCV", "Embedded Systems"],
-      githubLink: "https://github.com/yashrajsah/drone-nav",
-      demoLink: "https://drone-nav-demo.com",
+      title: 'Friendly Ai Chatbot',
+      description: 'A weather application providing real-time forecasts, historical data, and visualizations for locations worldwide.',
+      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+      tags: ['JavaScript', 'React', 'OpenWeather API', 'Chart.js'],
+      githubLink: 'https://github.com/Yashraj170704/friendify-ai',
+      demoLink: 'https://friendlyaichatbot.netlify.app/'
+   
     },
+    
     {
-      title: "AI-powered Recommendation Engine",
-      description: "A content recommendation system using collaborative filtering and deep learning to suggest personalized content.",
-      image: "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?q=80&w=1074&auto=format&fit=crop",
-      tags: ["Machine Learning", "NLP", "Python", "Flask"],
-      githubLink: "https://github.com/yashrajsah/ai-recommender",
-      demoLink: "https://ai-recommender.com",
-    },
-    {
-      title: "Personal Finance Dashboard",
-      description: "A full-stack application to track expenses, visualize spending patterns, and set budget goals with alerts.",
-      image: "https://images.unsplash.com/photo-1579170053380-58828d634a0c?q=80&w=1470&auto=format&fit=crop",
-      tags: ["React", "Node.js", "MongoDB", "D3.js"],
-      githubLink: "https://github.com/yashrajsah/finance-tracker",
-      demoLink: "https://finance-tracker-demo.com",
-    },
-    {
-      title: "Sentiment Analysis Tool",
-      description: "A web application that analyzes sentiment in text from various sources including social media and customer reviews.",
-      image: "https://images.unsplash.com/photo-1569396116180-210c182bedb8?q=80&w=1469&auto=format&fit=crop",
-      tags: ["NLP", "Python", "React", "AWS"],
-      githubLink: "https://github.com/yashrajsah/sentiment-analyzer",
-      demoLink: "https://sentiment-analyzer-demo.com",
-    },
-    {
-      title: "E-Learning Platform",
-      description: "An interactive platform for online learning with video courses, quizzes, and progress tracking.",
-      image: "https://images.unsplash.com/photo-1532619187608-e5375cab36aa?q=80&w=1470&auto=format&fit=crop",
-      tags: ["React", "Firebase", "Node.js", "MongoDB"],
-      githubLink: "https://github.com/yashrajsah/elearn-platform",
-      demoLink: "https://elearn-platform-demo.com",
+      title: 'Ai Voice Assistant',
+      description: 'A productivity application for managing tasks, projects, and deadlines with features like reminders and progress tracking.',
+      image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+      tags: ['React', 'Firebase', 'Tailwind CSS', 'Redux'],
+      githubLink: 'https://github.com/Thenameisyashraj1707/Ai-assistant-chatbot',
+      
     }
   ];
   
