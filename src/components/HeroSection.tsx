@@ -80,7 +80,7 @@ const HeroSection: React.FC = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-primary p-1 animate-float">
                 <div className="w-full h-full rounded-full overflow-hidden bg-secondary flex items-center justify-center">
                   <img 
-                    src="/assets/yashraj-profile.jpg" 
+                    src="https://media.licdn.com/dms/image/v2/D4D03AQFSL_ip6iqhjQ/profile-displayphoto-shrink_800_800/B4DZW_qPmmHIAg-/0/1742677277837?e=1747872000&v=beta&t=qHhufnTEni5yK4FXD6BlT_ZamdtmCl4c9jsJt-EA5qE" 
                     alt="Yashraj Sah"
                     className="w-full h-full object-cover"
                   />
