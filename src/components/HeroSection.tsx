@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
             {/* Social Links */}
             <div className="flex items-center justify-center md:justify-start gap-4 pt-2 animate-fade-in" style={{ animationDelay: '0.6s' }}>
               <a 
-                href="https://github.com/yashrajsah" 
+                href="https://github.com/Thenameisyashraj1707" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com/in/yashrajsah" 
+                href="https://www.linkedin.com/in/yashrajsah" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
