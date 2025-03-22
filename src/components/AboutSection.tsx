@@ -4,39 +4,47 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { GraduationCap, Award, Briefcase, Code } from 'lucide-react';
 
+interface TimelineItemProps {
+  year: string;
+  title: string;
+  organization: string;
+  description: string;
+  isLast?: boolean;
+}
+
 const AboutSection: React.FC = () => {
   // Timeline data
   const timelineItems = [
     {
-      year: "2023 - Present",
-      title: "Final Year Student - Computer Science",
-      description: "Pursuing B.Tech in Computer Science with a focus on AI/ML and software development.",
+      year: '2022-26 - Present',
+      title: 'Computer Science Engineering(Artificial Intelligence and Machine learning :-From : VIIT)',
+      organization: 'Vishwakarma Institute of Information Technology',
+      description: 'Pursuing a Bachelor\'s degree in Computer Science with a focus on AI, ML, and Web Development.',
       icon: <GraduationCap size={20} />,
     },
     {
-      year: "2023",
-      title: "Next24Tech AI/ML Internship",
-      description: "Applied machine learning algorithms to solve real-world problems and developed predictive models.",
+      year: '2024-25',
+      title: 'Intern At Infosys :- Ai domain',
+      organization: 'Infosys',
+      description: 'Worked onAnalysing Income Statement Balance Sheet Table with OpenAI conducted from October 25, 2024 to December 31, 2024',
       icon: <Briefcase size={20} />,
     },
     {
-      year: "2022",
-      title: "Prodigy Infotech ML Internship",
-      description: "Built and deployed machine learning solutions, focusing on data analysis and model optimization.",
+      year: '2024',
+      title: 'Intern At VOIS:-Data Analyticsusing AI-LLMs',
+      organization: 'VOIS',
+      description: 'Developed Doctors Visit, This project analyzes healthcare data to understand factors affecting doctor visits, illness distribution, and reduced activity due to health issues',
+      
       icon: <Briefcase size={20} />,
     },
     {
-      year: "2022",
-      title: "CDAC Drones Technology Certification",
-      description: "Specialized training in drone technology, including programming, control systems, and applications.",
+      year: '2024',
+      title: 'CDAC Drones Technology Certification',
+      organization: 'CDAC',
+      description: 'Specialized certification in drone technology and applications.',
       icon: <Award size={20} />,
     },
-    {
-      year: "2021",
-      title: "Open Source Contributor",
-      description: "Contributed to various open-source projects, improving code quality and adding new features.",
-      icon: <Code size={20} />,
-    },
+   
   ];
   
   return (
@@ -61,12 +69,17 @@ const AboutSection: React.FC = () => {
                     My passion lies at the intersection of artificial intelligence, web development, and solving complex technological challenges.
                   </p>
                   <p>
-                    With a strong foundation in programming and data science, I bring innovative approaches to projects, 
-                    leveraging cutting-edge technologies to create efficient and intelligent solutions.
-                  </p>
+                  I'm a Computer Science Engineer with a passion for Artificial Intelligence 🤖 and Machine Learning 📊, currently pursuing my B.Tech at Vishwakarma Institute of Information Technology (VIIT), Pune.
+               I thrive on building innovative AI solutions, exploring the latest tech trends, and working on real-world projects that drive impact 🌍.
+              Whether it's machine learning models, intelligent automation, or AI-driven applications, I love creating cutting-edge solutions that push the boundaries of technology! 💡✨                  </p>
                   <p>
-                    I'm particularly interested in machine learning, deep learning, and their applications in real-world scenarios. 
-                    My experience spans from developing predictive models to building responsive and user-friendly web applications.
+                  <p>
+            My journey in tech started back in 12th grade at SNBP International Jr. College, Morwadi, where I developed a strong interest in computer science and artificial intelligence.
+             Before that, I completed my 10th grade at Priyadarshani English Medium High School. Since then, 
+             I've been passionate about building AI-driven solutions and working on cutting-edge technologies.
+             </p>
+             With expertise in Python, Java, AI/ML frameworks (TensorFlow, PyTorch), and Web Development, I am constantly exploring new technologies and improving my skills. 
+            My goal is to leverage AI to build intelligent systems that solve real-world problems and make an impact.
                   </p>
                 </div>
               </CardContent>
