@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Loader2, Calendar, Download } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
   const { toast } = useToast();
@@ -138,20 +138,27 @@ const ContactSection: React.FC = () => {
                 
                 <Button 
                   type="submit" 
-                  className="btn-primary w-full"
+                  className="w-full group relative overflow-hidden transition-all duration-300"
                   disabled={isSubmitting}
+                  style={{
+                    background: "linear-gradient(to right, #8B5CF6, #D946EF)",
+                    boxShadow: "0 4px 14px rgba(139, 92, 246, 0.4)",
+                  }}
                 >
-                  {isSubmitting ? (
-                    <>
-                      <Loader2 size={16} className="mr-2 animate-spin" />
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      <Send size={16} className="mr-2" />
-                      Send Message
-                    </>
-                  )}
+                  <span className="relative z-10 flex items-center">
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 size={16} className="mr-2 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send size={16} className="mr-2" />
+                        Send Message
+                      </>
+                    )}
+                  </span>
+                  <span className="absolute inset-0 bg-white/20 transform scale-0 group-hover:scale-100 transition-transform duration-300 rounded-md"></span>
                 </Button>
               </form>
             </CardContent>
@@ -165,7 +172,7 @@ const ContactSection: React.FC = () => {
                 
                 <div className="space-y-5">
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10 text-primary">
+                    <div className="p-3 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 text-white">
                       <Mail size={20} />
                     </div>
                     <div>
@@ -175,7 +182,7 @@ const ContactSection: React.FC = () => {
                   </div>
                   
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10 text-primary">
+                    <div className="p-3 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white">
                       <Phone size={20} />
                     </div>
                     <div>
@@ -185,7 +192,7 @@ const ContactSection: React.FC = () => {
                   </div>
                   
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10 text-primary">
+                    <div className="p-3 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 text-white">
                       <MapPin size={20} />
                     </div>
                     <div>
@@ -205,11 +212,35 @@ const ContactSection: React.FC = () => {
                 </p>
                 
                 <div className="grid grid-cols-2 gap-4">
-                  <Button variant="outline" className="w-full">
-                    Schedule a Call
+                  <Button 
+                    variant="outline" 
+                    className="w-full group relative overflow-hidden transition-all duration-300"
+                    style={{
+                      borderColor: "#0EA5E9",
+                      borderWidth: "2px",
+                      color: "#0EA5E9",
+                      boxShadow: "0 4px 14px rgba(14, 165, 233, 0.2)",
+                    }}
+                  >
+                    <span className="relative z-10 flex items-center">
+                      <Calendar size={16} className="mr-2" />
+                      Schedule a Call
+                    </span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-md"></span>
                   </Button>
-                  <Button className="btn-primary w-full">
-                    Download CV
+                  
+                  <Button 
+                    className="w-full group relative overflow-hidden transition-all duration-300"
+                    style={{
+                      background: "linear-gradient(to right, #F97316, #FB923C)",
+                      boxShadow: "0 4px 14px rgba(249, 115, 22, 0.4)",
+                    }}
+                  >
+                    <span className="relative z-10 flex items-center">
+                      <Download size={16} className="mr-2 group-hover:-translate-y-1 transition-transform" />
+                      Download CV
+                    </span>
+                    <span className="absolute inset-0 bg-white/20 transform scale-0 group-hover:scale-100 transition-transform duration-300 rounded-md"></span>
                   </Button>
                 </div>
               </CardContent>
