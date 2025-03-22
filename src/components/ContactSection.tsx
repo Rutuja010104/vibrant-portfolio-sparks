@@ -180,7 +180,7 @@ const ContactSection: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-medium">Phone</h4>
-                      <p className="text-muted-foreground">+91 9876543210</p>
+                      <p className="text-muted-foreground">+91 7709308941</p>
                     </div>
                   </div>
                   
@@ -190,7 +190,7 @@ const ContactSection: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-medium">Location</h4>
-                      <p className="text-muted-foreground">Delhi, India</p>
+                      <p className="text-muted-foreground">Maharashtra, India</p>
                     </div>
                   </div>
                 </div>
