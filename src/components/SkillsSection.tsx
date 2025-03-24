@@ -23,6 +23,7 @@ import {
   Clock,
   Lightbulb
 } from 'lucide-react';
+import { cn } from "@/lib/utils";
 
 const SkillsSection: React.FC = () => {
   // Technical skills with icons and gradient colors
@@ -111,8 +112,7 @@ const SkillsSection: React.FC = () => {
                       </div>
                       <Progress 
                         value={skill.level} 
-                        className="h-2" 
-                        indicatorClassName={`bg-gradient-to-r ${category.gradient}`}
+                        className={cn("h-2 overflow-hidden relative", `before:absolute before:inset-0 before:bg-gradient-to-r before:${category.gradient} before:translate-x-[-${100 - skill.level}%]`)}
                       />
                     </div>
                   ))}
